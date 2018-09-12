@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">RecipeElement</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="funcStackedWidget">
+     <property name="currentIndex">
+      <number>5</number>
+     </property>
+     <widget class="app::EntropyCalculate" name="entropyCalculateWidget"/>
+     <widget class="app::DataStandardization" name="dataStandardizationWidget"/>
+     <widget class="app::DataRadio" name="dataRadioWidget"/>
+     <widget class="app::DataLogarithm" name="dataLogarithmWidget"/>
+     <widget class="app::DataWeight" name="dataWeightWidget"/>
+     <widget class="app::DataGrade" name="dataGradeWidget"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>app::EntropyCalculate</class>
+   <extends>QWidget</extends>
+   <header>EntropyCalculate.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>app::DataStandardization</class>
+   <extends>QWidget</extends>
+   <header>DataStandardization.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>app::DataRadio</class>
+   <extends>QWidget</extends>
+   <header>DataRadio.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>app::DataLogarithm</class>
+   <extends>QWidget</extends>
+   <header>DataLogarithm.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>app::DataWeight</class>
+   <extends>QWidget</extends>
+   <header>DataWeight.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>app::DataGrade</class>
+   <extends>QWidget</extends>
+   <header>DataGrade.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

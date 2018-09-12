@@ -1,0 +1,156 @@
+QWidget#CLoginUIBg{
+    border-image: url(skin/DustyBlue/LoginUI/login/bg.png);
+}
+
+QLabel#logoLabel{
+    background-image: url(skin/DustyBlue/LoginUI/login/logo.png);
+	background-repeat:none;
+}
+
+QLabel#msgLabel{
+	background-color:rgb(188,63,63);
+	padding-left:40px;
+	padding-right:40px;
+}
+
+QLabel#lbDomainTip{
+	padding-left:6px;
+}
+
+QPushButton#btnQuit{
+    outline: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: none;
+	border-image: url(skin/DustyBlue/LoginUI/login/winClose-n.png);
+}
+QPushButton#btnQuit:hover{
+	border-image: url(skin/DustyBlue/LoginUI/login/winClose-h.png);
+}
+QPushButton#btnQuit:pressed{
+	border-image: url(skin/DustyBlue/LoginUI/login/winClose-p.png);
+}
+QPushButton#btnQuit:disabled{
+	border-image: url(skin/DustyBlue/LoginUI/login/winClose-d.png);
+}
+
+QPushButton#userClearBtn{
+    outline: none;
+    background-position: center;
+    background-repeat: none;
+	border-image: url(skin/DustyBlue/LoginUI/login/Clean-n.png);
+}
+QPushButton#userClearBtn:hover{
+	border-image: url(skin/DustyBlue/LoginUI/login/Clean-h.png);
+}
+QPushButton#userClearBtn:pressed{
+	border-image: url(skin/DustyBlue/LoginUI/login/Clean-p.png);
+}
+QPushButton#userClearBtn:disabled{
+	border-image: url(skin/DustyBlue/LoginUI/login/Clean-d.png);
+}
+QPushButton#pwdClearBtn{	
+    outline: none;
+    background-position: center;
+    background-repeat: none;
+	border-image: url(skin/DustyBlue/LoginUI/login/Clean-n.png);
+}
+QPushButton#pwdClearBtn:hover{
+	border-image: url(skin/DustyBlue/LoginUI/login/Clean-h.png);
+}
+QPushButton#pwdClearBtn:pressed{
+	border-image: url(skin/DustyBlue/LoginUI/login/Clean-p.png);
+}
+QPushButton#pwdClearBtn:disabled{
+	border-image: url(skin/DustyBlue/LoginUI/login/Clean-d.png);
+}
+
+QPushButton#btnExpand{
+	padding-left:0px;
+    outline: none;
+	width: 80px;
+    background-position: center right;
+    background-repeat: none;
+	color: #888888;
+}
+QPushButton#btnExpand[checked=false]{
+	border-image: url(skin/DustyBlue/LoginUI/login/expand-n.png) 10 3 10 3;
+	border-width: 10px 3px 10px 3px;
+}
+QPushButton#btnExpand[checked=false]:hover{
+	border-image: url(skin/DustyBlue/LoginUI/login/expand-h.png) 10 3 10 3;
+	border-width: 10px 3px 10px 3px;
+}
+/*
+QPushButton#btnExpand[checked=false]:pressed{
+    background-image: url(skin/DustyBlue/LoginUI/login/expand-p.png);
+}
+QPushButton#btnExpand[checked=false]:disabled{
+    background-image: url(skin/DustyBlue/LoginUI/login/expand-d.png);
+}
+*/
+QPushButton#btnExpand[checked=true]{
+	border-image: url(skin/DustyBlue/LoginUI/login/hide-n.png) 10 3 10 3;
+	border-width: 10px 3px 10px 3px;
+}
+QPushButton#btnExpand[checked=true]:hover{
+	border-image: url(skin/DustyBlue/LoginUI/login/hide-h.png) 10 3 10 3;
+	border-width: 10px 3px 10px 3px;
+}
+/*
+QPushButton#btnExpand[checked=true]:pressed{
+    background-image: url(skin/DustyBlue/LoginUI/login/hide-p.png);
+}
+QPushButton#btnExpand[checked=true]:disabled{
+    background-image: url(skin/DustyBlue/LoginUI/login/hide-d.png);
+}*/
+
+DCM--NoticeFrame#LAB_USER[notice=false]{
+	border-image: url(skin/DustyBlue/LoginUI/login/user-n.png);
+}
+DCM--NoticeFrame#LAB_USER[notice=true]{
+	border-image: url(skin/DustyBlue/LoginUI/login/user-e.png);
+}
+DCM--NoticeFrame#LAB_PASSWORD[notice=false]{
+	border-image:url(skin/DustyBlue/LoginUI/login/password-n.png);
+}
+DCM--NoticeFrame#LAB_PASSWORD[notice=true]{
+	border-image:url(skin/DustyBlue/LoginUI/login/password-e.png);
+}
+
+DCM--NoticeFrame#LAB_ADDRESS{
+	border-image:url(skin/DustyBlue/LoginUI/login/address-n.png);
+}
+DCM--NoticeFrame#LAB_PORT{
+	border-image:url(skin/DustyBlue/LoginUI/login/port-n.png);
+}
+
+
+QWidget#wgtMask
+{
+	background-color: rgba(31, 33, 36, 60%);
+	border-top:1px solid #1f2124;
+}
+
+DSGUI--DSLineEdit:focus
+{
+	color:#ffffff;
+}
+DSGUI--DSLineEdit
+{
+	color:#abb2bd;
+}
+DSGUI--DSLineEdit#leUserName
+{
+	font-size:14px;
+}
+DSGUI--DSLineEdit#leUserPwd
+{
+	font-size:12px;
+	font-family:"Microsoft Yahei";
+}
+
+DSGUI--DSPushButton#btnLogin
+{
+	font-size:14px;
+}
